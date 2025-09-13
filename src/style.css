@@ -8,13 +8,39 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   background: repeating-linear-gradient(
     lightblue,
     lightblue 20px,
     skyblue 20px,
     skyblue 30px
   );
-  height: 100%;
 }
+
+header {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  background-color: white;
+  box-shadow: 0px 0px 5px black;  
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 200px;
+  background: white;
+}
+
+
 
 
