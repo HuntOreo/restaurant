@@ -3,6 +3,18 @@
 @import './styles/menu.css';
 @import './styles/contacts.css';
 
-body {
-  background: skyblue;
+html {
+  height: 100%;
 }
+
+body {
+  background: repeating-linear-gradient(
+    lightblue,
+    lightblue 20px,
+    skyblue 20px,
+    skyblue 30px
+  );
+  height: 100%;
+}
+
+

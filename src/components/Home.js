@@ -1,4 +1,6 @@
 import heroBg from '../img/heroBg.jpg';
+import Info from './home/Info.js';
+import Reserve from './home/Reserve.js';
 
 function Home(anchor) {
   const landing = document.createElement('div');
@@ -12,9 +14,11 @@ function Home(anchor) {
   const img = document.createElement('img');
   img.src = heroBg;
 
-  landing.append(hero);
-  hero.append(heroHeader);
   hero.append(img);
+  hero.append(heroHeader);
+  landing.append(hero);
+  landing.append(Reserve());
+  landing.append(Info());
 
   anchor.append(landing);
 }
