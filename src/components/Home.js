@@ -1,6 +1,6 @@
 import heroBg from '../img/heroBg.jpg';
 
-function Landing(anchor) {
+function Home(anchor) {
   const landing = document.createElement('div');
   const hero = document.createElement('div');
   const heroHeader = document.createElement('h1');
@@ -19,4 +19,4 @@ function Landing(anchor) {
   anchor.append(landing);
 }
 
-export default Landing;
+export default Home;
