@@ -2,28 +2,42 @@ function Reserve() {
     const container = document.createElement('div');
     const header = document.createElement('h2');
     const form = document.createElement('form');
-    const wrapper = document.createElement('div');
-    const label = document.createElement('label');
-    const input = document.createElement('input');
+    const nameWrapper = document.createElement('div');
+    const phoneWrapper = document.createElement('div');
+    const nameLabel = document.createElement('label');
+    const nameInput = document.createElement('input');
+    const phoneLabel = document.createElement('label');
+    const phoneInput = document.createElement('input');
     const submitBtn = document.createElement('button');
 
     container.classList.add('reserve-container');
     form.id = 'reserve-form';
-    wrapper.classList.add('wrapper');
-    label.setAttribute('for', 'number');
-    input.id = 'number';
-    input.setAttribute('placeholder', '555-555-5555');
-    input.setAttribute('name', 'number');
+    nameWrapper.classList.add('wrapper');
+    phoneWrapper.classList.add('wrapper');
+
+    phoneInput.id = 'number';
+    phoneLabel.setAttribute('for', 'number');
+    phoneInput.setAttribute('placeholder', '555-555-5555');
+    phoneInput.setAttribute('name', 'number');
+    
+    nameInput.id = 'name';
+    nameLabel.setAttribute('for', 'name');
+    nameInput.setAttribute('placeholder', 'John Smith');
+    nameInput.setAttribute('name', 'name');
 
     header.textContent = 'Make a reservation.';
-    label.textContent = 'Phone Number:';
+    nameLabel.textContent = 'Name:';
+    phoneLabel.textContent = 'Phone Number:';
     submitBtn.textContent = 'Reserve';
 
     submitBtn.addEventListener('click', event => event.preventDefault());
 
-    wrapper.append(label);
-    wrapper.append(input);
-    form.append(wrapper);
+    nameWrapper.append(nameLabel);
+    nameWrapper.append(nameInput);
+    phoneWrapper.append(phoneLabel);
+    phoneWrapper.append(phoneInput);
+    form.append(nameWrapper);
+    form.append(phoneWrapper);
     form.append(submitBtn);
     container.append(header);
     container.append(form);
