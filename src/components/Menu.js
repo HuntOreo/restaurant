@@ -3,27 +3,28 @@ import coffee from '../img/food/coffee.jpg'
 import sandwich from '../img/food/sandwich.jpg'
 import soup from '../img/food/soup.jpg'
 
+const food = [
+  {
+    img: bagel,
+    name: 'bagel',
+  },
+  {
+    img: coffee,
+    name: 'coffee',
+  },
+  {
+    img: sandwich,
+    name: 'sandwich',
+  },
+  {
+    img: soup,
+    name: 'soup',
+  }
+];
+
 function Menu(anchor) {
   const template = document.querySelector('#item-template');
   const container = document.createElement('div');
-  const food = [
-    {
-      img: bagel,
-      name: 'bagel',
-    },
-    {
-      img: coffee,
-      name: 'coffee',
-    },
-    {
-      img: sandwich,
-      name: 'sandwich',
-    },
-    {
-      img: soup,
-      name: 'soup',
-    }
-  ];
 
   container.classList.add('menu');
 

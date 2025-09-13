@@ -1,6 +1,7 @@
 @import '../node_modules/@huntoreocodes/hunter-normalize/hunter-normalize.css';
 @import './styles/landing.css';
 @import './styles/menu.css';
+@import './styles/contacts.css';
 
 body {
   background: skyblue;
