@@ -16,7 +16,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack && webpack serve"
   },
   "dependencies": {
     "@huntoreocodes/hunter-normalize": "^1.1.1"
