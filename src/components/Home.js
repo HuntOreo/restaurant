@@ -4,22 +4,25 @@ import Reserve from './home/Reserve.js';
 
 function Home(anchor) {
   const landing = document.createElement('div');
+  const container = document.createElement('div');
   const hero = document.createElement('div');
   const heroHeader = document.createElement('h1');
 
   landing.classList.add('landing');
+  container.classList.add('content-container');
   hero.classList.add('hero');
   heroHeader.textContent = 'Yummy Foods Cafe';
+
 
   const img = document.createElement('img');
   img.src = heroBg;
 
   hero.append(img);
   hero.append(heroHeader);
+  container.append(Reserve());
+  container.append(Info());
   landing.append(hero);
-  landing.append(Reserve());
-  landing.append(Info());
-
+  landing.append(container);
   anchor.append(landing);
 }
 

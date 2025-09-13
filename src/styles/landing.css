@@ -1,6 +1,13 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero {
   position: relative;
   max-height: 500px;
+  align-self: stretch;
 }
 
 .hero h1 {
