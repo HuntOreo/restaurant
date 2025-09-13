@@ -1,10 +1,15 @@
 @import '../node_modules/@huntoreocodes/hunter-normalize/hunter-normalize.css';
-@import './styles/landing.css';
+@import './styles/home.css';
 @import './styles/menu.css';
-@import './styles/contacts.css';
+@import './styles/about.css';
 
 html {
   height: 100%;
+}
+
+ul li {
+  list-style: none;
+  
 }
 
 body {

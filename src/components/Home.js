@@ -1,5 +1,5 @@
 import heroBg from '../img/heroBg.jpg';
-import Info from './home/Info.js';
+import Hours from './home/Hours.js';
 import Reserve from './home/Reserve.js';
 
 function Home(anchor) {
@@ -20,8 +20,8 @@ function Home(anchor) {
 
   hero.append(img);
   hero.append(heroHeader);
+  container.append(Hours());
   container.append(Reserve());
-  container.append(Info());
   landing.append(hero);
   landing.append(container);
   anchor.append(landing);

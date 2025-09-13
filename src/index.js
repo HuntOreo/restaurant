@@ -12,4 +12,4 @@ homeBtn.addEventListener('click', () => render(Home));
 menuBtn.addEventListener('click', () => render(Menu));
 aboutBtn.addEventListener('click', () => render(About));
 
-render(Home);
+render(Home); 
