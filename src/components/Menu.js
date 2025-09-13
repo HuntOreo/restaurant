@@ -24,9 +24,12 @@ const food = [
 
 function Menu(anchor) {
   const template = document.querySelector('#item-template');
+  const menu = document.createElement('div');
   const container = document.createElement('div');
 
-  container.classList.add('menu');
+  menu.classList.add('menu');
+  menu.classList.add('container');
+  container.classList.add('content-container');
 
   for (let i = 0; i < 4; i++) {
     const clone = template.content.cloneNode(true);
@@ -39,7 +42,8 @@ function Menu(anchor) {
     container.append(clone);
   }
 
-  anchor.append(container);
+  menu.append(container);
+  anchor.append(menu);
 }
 
 export default Menu

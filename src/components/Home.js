@@ -9,6 +9,7 @@ function Home(anchor) {
   const heroHeader = document.createElement('h1');
 
   landing.classList.add('landing');
+  landing.classList.add('container');
   container.classList.add('content-container');
   hero.classList.add('hero');
   heroHeader.textContent = 'Yummy Foods Cafe';

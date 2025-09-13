@@ -20,10 +20,13 @@ const contacts = [
 ]
 
 function About(anchor) {
+  const about = document.createElement('div');
   const container = document.createElement('div');
   const template = document.querySelector('#contact-template');
 
-  container.classList.add('about');
+  about.classList.add('about');
+  about.classList.add('container');
+  container.classList.add('content-container');
 
   for (const contact of contacts) {
     const clone = template.content.cloneNode(true);
@@ -46,7 +49,8 @@ function About(anchor) {
     container.append(clone);
   }
 
-  anchor.append(container);
+  about.append(container);
+  anchor.append(about);
 
 }
 
