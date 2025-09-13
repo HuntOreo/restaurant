@@ -33,6 +33,34 @@
 }
 
 /* 
+  Schedule
+  =========
+*/
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 500px;
+}
+
+.schedule h1 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.schedule ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+/* 
   Form 
   =====  
 */
