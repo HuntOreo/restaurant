@@ -1,24 +1,34 @@
-import bagel from '../img/food/bagel.jpg'
-import coffee from '../img/food/coffee.jpg'
-import sandwich from '../img/food/sandwich.jpg'
-import soup from '../img/food/soup.jpg'
+import bagel from '../img/food/bagel.jpg';
+import coffee from '../img/food/coffee.jpg';
+import sandwich from '../img/food/sandwich.jpg';
+import soup from '../img/food/soup.jpg';
+import tea from '../img/food/tea.jpg';
 
 const food = [
   {
-    img: bagel,
-    name: 'bagel',
+    img: coffee,
+    name: 'Coffee',
+    price: 3.99,
   },
   {
-    img: coffee,
-    name: 'coffee',
+    img: tea,
+    name: 'Tea',
+    price: 3.99
+  },
+  {
+    img: bagel,
+    name: 'Bagel',
+    price: 5.99,
   },
   {
     img: sandwich,
-    name: 'sandwich',
+    name: 'Sandwich',
+    price: 6.99,
   },
   {
     img: soup,
-    name: 'soup',
+    name: 'Soup',
+    price: 5.99,
   }
 ];
 
@@ -31,13 +41,15 @@ function Menu(anchor) {
   menu.classList.add('container');
   container.classList.add('content-container');
 
-  for (let i = 0; i < 4; i++) {
+  for (let item of food) {
     const clone = template.content.cloneNode(true);
     const header = clone.querySelector('h2');
     const img = clone.querySelector('img');
+    const price = clone.querySelector('.price');
 
-    header.textContent = food[i].name;
-    img.src = food[i].img;
+    header.textContent = item.name;
+    img.src = item.img;
+    price.textContent = `$${item.price}`
 
     container.append(clone);
   }
