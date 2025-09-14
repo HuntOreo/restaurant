@@ -9,8 +9,25 @@ const homeBtn = buttons[0];
 const menuBtn = buttons[1];
 const aboutBtn = buttons[2];
 
-homeBtn.addEventListener('click', () => render(Home));
-menuBtn.addEventListener('click', () => render(Menu));
-aboutBtn.addEventListener('click', () => render(About));
+let selected = document.querySelector('.selected');
+
+homeBtn.addEventListener('click', () => {
+  render(Home)
+  toggleSelected(homeBtn);
+});
+menuBtn.addEventListener('click', () => {
+  render(Menu)
+  toggleSelected(menuBtn);
+});
+aboutBtn.addEventListener('click', () => {
+  render(About)
+  toggleSelected(aboutBtn);
+});
+
+const toggleSelected = function (btn) {
+  if (selected) selected.classList.toggle('selected');
+  btn.classList.toggle('selected');
+  selected = btn;
+}
 
 render(Home); 
