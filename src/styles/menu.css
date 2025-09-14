@@ -1,3 +1,14 @@
+@media (max-width: 752px) {
+  .menu .item img {
+    width: 100%;
+  }
+
+  .menu .item .wrapper {
+    min-width: 100%;
+  }
+}
+
+
 .menu .content-container {
   display: flex;
   flex-direction: column;
