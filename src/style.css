@@ -7,11 +7,6 @@ html {
   height: 100%;
 }
 
-ul li {
-  list-style: none;
-  
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -24,6 +19,31 @@ body {
   );
 }
 
+ul li {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(142, 223, 249);
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/* 
+  Nav
+  ====
+*/
 header {
   min-height: 100px;
   display: flex;
@@ -34,6 +54,17 @@ header {
 
   background-color: white;
   box-shadow: 0px 0px 5px black;  
+}
+
+header nav {
+  width: min(1000px, 100%);
+  display: flex;
+  justify-content: space-around;
+}
+
+header button {
+  width: 60px;
+  padding: 5px;
 }
 
 #content > .container {
