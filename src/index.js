@@ -13,9 +13,4 @@ homeBtn.addEventListener('click', () => render(Home));
 menuBtn.addEventListener('click', () => render(Menu));
 aboutBtn.addEventListener('click', () => render(About));
 
-function toggleActivePage() {
-  for (let btn of buttons) {
-    btn.classList.toggle();
-  }
-}
 render(Home); 

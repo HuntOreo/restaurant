@@ -1,3 +1,5 @@
+import Info from './about/Info.js';
+
 const contacts = [
   {
     name: 'Hunter',
@@ -49,9 +51,9 @@ function About(anchor) {
     container.append(clone);
   }
 
+  container.append(Info());
   about.append(container);
   anchor.append(about);
-
 }
 
 export default About;
