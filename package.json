@@ -15,8 +15,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "watch": "webpack && webpack serve"
+    "build": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "watch": "webpack && webpack serve",
+    "deploy": "npm run build-prod && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@huntoreocodes/hunter-normalize": "^1.1.1"
