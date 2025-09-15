@@ -19,6 +19,10 @@ body {
   );
 }
 
+#content {
+  flex: 1
+}
+
 ul li {
   list-style: none;
 }
@@ -77,6 +81,11 @@ header button {
   width: min(1000px, 100%); 
   padding: 10px;
 }
+
+/* 
+  Footer
+  =======
+*/
 
 footer {
   margin-top: auto;
