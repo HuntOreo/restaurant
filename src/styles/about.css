@@ -1,0 +1,53 @@
+.about {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contacts-container,
+.desc-container {
+  flex: 1;
+}
+
+.contacts-container > .container {
+  padding: 10px;
+  
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.contacts-container h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.contacts-container ul li {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.desc-container {
+  font-size: 1.2rem;
+}
+
+.desc-container h2 {
+  font-style: italic;
+  text-align: center;
+}

@@ -23,12 +23,14 @@ const contacts = [
 
 function About(anchor) {
   const about = document.createElement('div');
-  const container = document.createElement('div');
+  const contentContainer = document.createElement('div');
+  const contactsContainer = document.createElement('div');
   const template = document.querySelector('#contact-template');
 
   about.classList.add('about');
   about.classList.add('container');
-  container.classList.add('content-container');
+  contentContainer.classList.add('content-container');
+  contactsContainer.classList.add('contacts-container');
 
   for (const contact of contacts) {
     const clone = template.content.cloneNode(true);
@@ -48,11 +50,12 @@ function About(anchor) {
     list.append(number);
     list.append(email);
 
-    container.append(clone);
+    contactsContainer.append(clone);
   }
 
-  container.append(Info());
-  about.append(container);
+  contentContainer.append(contactsContainer);
+  contentContainer.append(Info());
+  about.append(contentContainer);
   anchor.append(about);
 }
 
