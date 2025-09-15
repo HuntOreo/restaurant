@@ -18,6 +18,7 @@
     "build": "webpack --config webpack.dev.js",
     "build-prod": "webpack --config webpack.prod.js",
     "watch": "webpack && webpack serve",
+    "commit": "git add dist -f && git commit",
     "deploy": "npm run build-prod && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
